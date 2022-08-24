@@ -58,12 +58,22 @@ git clone https://github.com/Johnsamoel/Guess-Number
 npm install
 ```
 
-3. Enter this command to run the react app.
+3. Enter this command to run the react native app.
 
 ```sh
 npm start
 ```
 
+4. Enter this command to run the react native app on Andriod.
+
+```sh
+a
+```
+5. Enter this command to run the react native app on IOS.
+
+```sh
+i
+```
 
 <!-- CONTACT -->
 
