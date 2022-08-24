@@ -46,13 +46,13 @@ To get a local copy up and running follow these simple example steps.
 These are the required steps to start using the app.
 
 
-1. Clone the repo
+1. Clone the repo.
 
 ```sh
 git clone https://github.com/Johnsamoel/Guess-Number
 ```
 
-2. Install NPM packages
+2. Install NPM packages.
 
 ```sh
 npm install
