@@ -1,4 +1,4 @@
-import { View  , StyleSheet , TextInput , Text, Alert} from 'react-native';
+import { View  , StyleSheet , TextInput , Text} from 'react-native';
 
 
 // importing my components
@@ -10,19 +10,10 @@ import { useContext } from 'react';
 import { GameContext } from '../Context/GameContext';
 
 const Card = ({title}) => {
-    const {userData , setuserData } = useContext(GameContext);
+    const {userData , setuserData , ChangeValueHandler } = useContext(GameContext);
   
 
-    const ChangeValueHandler = () => {
-        if(userData.value === '' || userData.value < 1 || userData.value > 99 || isNaN(userData.value) ){
-            Alert.alert( 'Invalid Number' ,'Number Must be between 1 and 99.' , [{title:'okay' }] )
-            setuserData({value:'' , NumberWasChosen: false })
-            return
-        }
 
-        setuserData((val) => { return { ...val , NumberWasChosen: true } })
-       
-    }
     return (
         <View  style={styles.card}>
       
@@ -35,7 +26,7 @@ const Card = ({title}) => {
         </View>
 
         <View style={styles.container} >
-        <PrimaryButton onPress={ChangeValueHandler}>Confirm</PrimaryButton>
+        <PrimaryButton onPress={() => { ChangeValueHandler() }}>Confirm</PrimaryButton>
         </View>
         </View>
     );
