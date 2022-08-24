@@ -1,6 +1,10 @@
 import { View, Text, Pressable, StyleSheet } from "react-native";
 
-const PrimaryButton = ({ children, onPress }) => {
+
+
+
+
+const SencondaryButton = ({ children, onPress })  => {
   return (
     <View style={styles.buttonOuterContainer}>
       <Pressable
@@ -16,30 +20,29 @@ const PrimaryButton = ({ children, onPress }) => {
       </Pressable>
     </View>
   );
-};
+}
+
+
 
 const styles = StyleSheet.create({
   buttonOuterContainer: {
-    width: 150,
-    height: 35,
-    backgroundColor: "#834d9b",
     borderRadius: 28,
     margin: 4,
-    overflow: "hidden",
+    overflow: 'hidden',
   },
   buttonInnerContainer: {
-    backgroundColor: "#834d9b",
+    backgroundColor: '#834d9b',
     paddingVertical: 8,
     paddingHorizontal: 16,
     elevation: 2,
   },
   buttonText: {
-    color: "white",
-    textAlign: "center",
-    fontWeight: "bold",
+    color: 'white',
+    textAlign: 'center',
   },
   pressed: {
     opacity: 0.75,
   },
 });
-export default PrimaryButton;
+
+export default SencondaryButton;
