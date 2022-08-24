@@ -1,5 +1,5 @@
 import { useState, useEffect , useContext} from 'react';
-import { View, StyleSheet, Alert, Text, FlatList } from 'react-native';
+import { View, StyleSheet, Alert, Text } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
 //components
@@ -86,7 +86,7 @@ const  Game = () =>{
 
   return (
     <View style={styles.screen}>
-      <Title>Opponent's Guess</Title>
+      <Title>My guess</Title>
       <View style={styles.card}>
         <Text style={styles.instructionText}>
           Higher or lower?
