@@ -28,7 +28,6 @@ My project is about guessing the number by your device by your guidance and coun
 
 In this project I tented to used different technology to implement my idea in a proper way, First off I used React Native.js as a framework with the help of expo cli to implement the mobile application, I also tented to use organised and clean code.
 
-Regarding the server side I used Node.js to create and api's.
 
 - [React.js](https://reactnative.dev)
 - [Expo CLI](https://docs.expo.dev/workflow/expo-cli)
