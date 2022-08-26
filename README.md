@@ -31,7 +31,6 @@ In this project I tented to used different technology to implement my idea in a 
 
 - [React.js](https://reactnative.dev)
 - [Expo CLI](https://docs.expo.dev/workflow/expo-cli)
-- [Context API]
 
 
 <!-- GETTING STARTED -->
